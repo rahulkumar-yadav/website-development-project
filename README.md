@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 [ATG World](https://agt-world.netlify.app/) Job portal web site that build on ReactJS and Bootstrap.
 
 ## Features
