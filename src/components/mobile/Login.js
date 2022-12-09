@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Modal from "react-bootstrap/Modal";
+import { AuthContext } from "../../context/AuthContextProvider";
 import InputLoginGroup from "../form/InputLoginGroup";
 import Facebook from "../shared/button/Facebook";
 import Google from "../shared/button/Google";
 
 const Login = ({ handleForm }) => {
+  const { handleLogin } = useContext(AuthContext);
+  const handleFormSet = (e) => {
+    e.preventDefault();
+    handleLogin();
+  };
   return (
     <>
       <Modal.Header closeButton className="border-0">
@@ -14,7 +20,7 @@ const Login = ({ handleForm }) => {
       </Modal.Header>
       <Modal.Body>
         <div className="col ">
-          <form className="d-flex flex-column">
+          <form className="d-flex flex-column" onSubmit={handleFormSet}>
             <InputLoginGroup />
             <div className="d-flex align-items-center justify-content-between">
               <button className="rounded-pill d-block w-full btn btn-primary profile_name my-3 px-5 fw-semibold">
