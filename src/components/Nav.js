@@ -3,7 +3,7 @@ import { FaUserFriends } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { BiLogIn } from "react-icons/bi";
 import { AuthContext } from "../context/AuthContextProvider";
-import Dropdown from "react-bootstrap/Dropdown";
+import DropdownMenuDot from "./shared/Dropdown";
 
 const Nav = ({ setModalShow }) => {
   const { user } = useContext(AuthContext);
@@ -48,20 +48,11 @@ const Nav = ({ setModalShow }) => {
       </div>
       <div className="d-flex justify-content-between align-items-center  d-md-none">
         <p className="mb-0">Posts (368)</p>
-        <Dropdown>
-          <Dropdown.Toggle
-            id="dropdown-basic"
-            className="btn btn_custom d-flex btn_secondary text-dark"
-          >
-            Filter : All
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Article</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Event</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Education</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Job</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+
+        <DropdownMenuDot
+          title={["Article", "Event", "Education", "Job"]}
+          element={"Filter : All"}
+        />
       </div>
     </div>
   );

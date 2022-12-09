@@ -1,10 +1,10 @@
-import React from "react";
 import { posts } from "../data/posts";
-import { BsThreeDots } from "react-icons/bs";
 import { BiCalendarEvent } from "react-icons/bi";
 import { GoLocation } from "react-icons/go";
 import { AiOutlineEye } from "react-icons/ai";
 import { BsShareFill } from "react-icons/bs";
+import DropdownMenuDot from "./shared/Dropdown";
+import { BsThreeDots } from "react-icons/bs";
 
 const Content = () => {
   return (
@@ -25,9 +25,11 @@ const Content = () => {
               </p>
               <div className="d-flex justify-content-between align-items-start gap-3 py-1 ">
                 <h3 className=" card_tittle  fw-bold ">{post?.title}</h3>
-                <span className="dot dot_active ">
-                  <BsThreeDots />
-                </span>
+                <DropdownMenuDot
+                  title={["Edit", "Write", "Options"]}
+                  align
+                  element={<BsThreeDots className="fs-4" />}
+                />
               </div>
               {post.describe && (
                 <p className="lead card_description py-1">{post?.describe}</p>
@@ -67,7 +69,7 @@ const Content = () => {
                   </div>
                 </div>
                 <div className="d-flex gap-3  align-items-center ">
-                  <span className="icon">
+                  <span className="icon icon_active">
                     <BsShareFill />
                   </span>
                 </div>

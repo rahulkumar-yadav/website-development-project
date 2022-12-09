@@ -1,6 +1,4 @@
 import React from "react";
-import gl from "../assets/imgs/SG.png";
-import fb from "../assets/imgs/FB.png";
 import img from "../assets/imgs/form.png";
 import Facebook from "./shared/button/Facebook";
 import Google from "./shared/button/Google";
@@ -23,8 +21,8 @@ const Register = ({ handleForm }) => {
           </span>
         </p>
       </div>
-      <div class="row gap-4 g-0 ">
-        <div class="col ">
+      <div className="row gap-4 g-0 ">
+        <div className="col ">
           <form className="d-flex flex-column">
             <InputRegisterGroup />
             <button className="rounded-pill d-block w-full btn btn-primary my-3 fw-semibold">
@@ -34,7 +32,7 @@ const Register = ({ handleForm }) => {
           <Facebook />
           <Google />
         </div>
-        <div class="col ">
+        <div className="col ">
           <div className="mb-2">
             <img src={img} alt="" className="img-fluid" />
           </div>

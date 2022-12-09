@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AuthContext } from "../context/AuthContextProvider";
 import MobileForm from "./mobile/MobileForm";
 
 const Hero = () => {
-  const { user } = useState(AuthContext);
+  const { user } = useContext(AuthContext);
   const [modalShow, setModalShow] = useState(false);
   return (
     <section className="hero">

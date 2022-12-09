@@ -13,7 +13,7 @@ const Login = ({ handleForm }) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div class="col ">
+        <div className="col ">
           <form className="d-flex flex-column">
             <InputLoginGroup />
             <div className="d-flex align-items-center justify-content-between">

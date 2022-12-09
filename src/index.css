@@ -154,7 +154,7 @@ input {
   background: #edeef0;
 }
 .dot {
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -234,7 +234,29 @@ input {
   border-radius: 4px 4px 0 0;
 }
 
+.btn_post {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  height: 54px;
+  width: 54px;
+  border-radius: 0px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18), 0px 0px 2px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(180deg, #ff5c5c 0%, #f0568a 100%);
+  color: white;
+  font-size: 18px;
+}
+
+.dropstart .dropdown-toggle::before {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .logo {
+    height: 18px;
+    width: 100%;
+    max-width: 110px;
+  }
   body {
     font-size: 14px;
   }
