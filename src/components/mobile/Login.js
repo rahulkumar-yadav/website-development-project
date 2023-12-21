@@ -37,7 +37,9 @@ const Login = ({ handleForm }) => {
           <Facebook />
           <Google />
           <div className="d-flex justify-content-center mb-5 mt-2  login_text ">
-            <button className="btn profile_name ">Forget Password</button>
+            <button className="btn profile_name ">
+              <b>Forgot Password?</b>
+            </button>
           </div>
         </div>
       </Modal.Body>

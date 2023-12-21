@@ -3,7 +3,9 @@ import React from "react";
 const Forget = () => {
   return (
     <div className="d-flex justify-content-center mt-2 login_text ">
-      <button className="btn">Forget Password</button>
+      <button className="btn">
+        <b>Forgot Password?</b>
+      </button>
     </div>
   );
 };

@@ -13,8 +13,8 @@ const Header = () => {
           <div className="d-flex align-items-center">
             <img src={logo} alt="logo" className="logo " />
           </div>
-          <div className="d-flex justify-content-center ">
-            <div className="search-box  ">
+          <div className="d-flex justify-content-center">
+            <div className="search-box">
               <span>
                 <FiSearch />
               </span>
@@ -22,11 +22,12 @@ const Header = () => {
                 type="text"
                 name="search"
                 id="search"
-                placeholder="Search for your favorite groups in ATG "
+                placeholder="Search for your favorite groups in ATG"
                 className=" d-none d-lg-flex"
               />
             </div>
           </div>
+
           <div className="login d-none d-md-block ">
             {user ? (
               <div className="d-flex align-items-center gap-3">

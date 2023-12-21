@@ -16,11 +16,13 @@ body {
 .header {
   height: 72px;
 }
+
 .logo {
   height: 24px;
   width: 100%;
   max-width: 162px;
 }
+
 .search-box {
   width: 100%;
   max-width: 360px;
@@ -32,31 +34,38 @@ body {
   display: flex;
   align-items: center;
 }
+
 input {
   background: inherit;
   width: 100%;
   border: none;
   outline: none;
 }
+
 .search-box span {
   font-size: 18px;
 }
+
 .login {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-top: 10px;
 }
+
 .user_img {
   height: 36px;
   width: 36px;
   border-radius: 21px;
 }
+
 .user_name {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0em;
 }
+
 .hero {
   height: 440px;
   background-image: linear-gradient(
@@ -69,6 +78,7 @@ input {
   background-position: center;
   color: white;
 }
+
 .hero_content {
   max-width: 1040px;
 }
@@ -88,17 +98,21 @@ input {
   gap: 0.5rem;
   border: none;
 }
+
 .btn_secondary {
   background: var(--bg-secondary);
 }
+
 .btn_gray {
   color: #6a6a6b;
 }
+
 .link {
   color: var(--text-secondary);
   font-weight: 400;
   text-decoration: none;
 }
+
 .link_active {
   color: black;
 }
@@ -110,23 +124,28 @@ input {
   grid-template-columns: minmax(min-content, 692px) minmax(220px, 1fr);
   gap: 100px;
 }
+
 .custom_card {
   border: 1px solid #e0e0e0;
   border-radius: 4px;
 }
+
 .content_body {
   padding: 20px;
 }
+
 .card_img {
   border-radius: 4px 4px 0px 0px;
   width: 100%;
 }
+
 .card_tittle {
   font-size: 22px;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
 }
+
 .card_link {
   width: 100%;
   background: white;
@@ -135,10 +154,12 @@ input {
   color: #02b875;
   padding: 0.5rem;
 }
+
 .profile_img {
   width: 48px;
   height: 48px;
 }
+
 .profile_name {
   font-weight: 600;
   font-size: 18px;
@@ -153,6 +174,7 @@ input {
 .icon_active {
   background: #edeef0;
 }
+
 .dot {
   font-size: 20px;
   border-radius: 4px;
@@ -165,12 +187,15 @@ input {
 .dot_active {
   background: #bfbfc0;
 }
+
 .location {
   font-size: 14px;
 }
+
 .info_content {
   color: var(--text-secondary);
 }
+
 .info {
   font-size: 12px;
 }
@@ -180,11 +205,13 @@ input {
   line-height: 18px;
   letter-spacing: 0.1em;
 }
+
 .btn_follow {
   font-size: 12px;
   background: #edeef0;
   padding: 0.4rem 1rem;
 }
+
 .link_more {
   font-size: 12px;
   text-decoration: none;
@@ -210,26 +237,32 @@ input {
 .input_grid {
   border-bottom-left-radius: none;
 }
+
 .form_input {
   background: #f7f8fa;
   padding: 0.8rem;
   border-bottom: 1px solid #d9d9db;
 }
+
 .agree {
   font-size: 11px;
   font-weight: 400;
 }
+
 .login_text {
   font-size: 13px;
 }
+
 .mobile {
   --bs-modal-margin: 0;
 }
+
 .mobile .modal-dialog {
   display: flex;
   align-items: flex-end;
   height: 100%;
 }
+
 .mobile .modal-dialog .modal-content {
   border-radius: 4px 4px 0 0;
 }

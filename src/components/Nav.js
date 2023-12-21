@@ -12,7 +12,7 @@ const Nav = ({ setModalShow }) => {
       <div className="custom_navbar row g-0 py-3 d-none d-md-flex  ">
         <div className="col d-flex align-items-center gap-3 ">
           <a href="/" className="link link_active">
-            All Post (32)
+            All Posts (32)
           </a>
           <a href="/" className="link">
             Article
